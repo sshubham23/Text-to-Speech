@@ -8,7 +8,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url('https://images.playground.com/ee16e11166b94a35b65daf81ae0bda4a.jpeg');
+    background-color : seagreen;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
