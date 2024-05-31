@@ -1,44 +1,81 @@
-*{
+{
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background: linear-gradient(135deg, #dcdeff 0%, #00fff7 100%);
+    color: #fff;
 }
 
-.container{
-    background-color: #4FBDBA;
+.container {
+    background-color: rgba(34, 167, 255, 0.7);
     display: grid;
     gap: 20px;
     width: 500px;
     max-width: calc(100vw - 40px);
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+label {
     font-size: 1.2rem;
 }
 
-#text{
+#text {
     display: block;
-    height: 100px;
-    border-radius: .5rem;
-    font-size: 1.5rem;
+    height: 150px;
+    border-radius: 10px;
+    font-size: 1.2rem;
     border: none;
     resize: none;
-    padding: 8px 10px;
-    outline: 2px solid rgba(120,120,120,0.623);
+    padding: 10px;
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
 }
 
-button{
-    padding: 10px;
-    background: #072227;
+#text:focus {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+button {
+    padding: 12px 20px;
+    background: #FF6347;
     color: #fff;
-    border-radius: .5rem;
+    border-radius: 10px;
     cursor: pointer;
     border: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
+    transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background: #FF4500;
+    transform: translateY(-3px);
+}
+
+button:active {
+    background: #FF6347;
+    transform: translateY(0);
 }
