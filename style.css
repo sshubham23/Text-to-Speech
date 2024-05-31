@@ -1,17 +1,21 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background-image: url('https://images.playground.com/ee16e11166b94a35b65daf81ae0bda4a.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.container{
-    background-color: #4FBDBA;
+.container {
+    background-color: rgba(79, 189, 186, 0.9); /* Slightly transparent background */
     display: grid;
     gap: 20px;
     width: 500px;
@@ -21,7 +25,7 @@ body{
     font-size: 1.2rem;
 }
 
-#text{
+#text {
     display: block;
     height: 100px;
     border-radius: .5rem;
@@ -32,7 +36,7 @@ body{
     outline: 2px solid rgba(120,120,120,0.623);
 }
 
-button{
+button {
     padding: 10px;
     background: #072227;
     color: #fff;
