@@ -2,50 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Company Name</title>
+    <title>Text to Speech in JavaScript</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" type="module"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="hero">
-        <h1>Welcome to Your Company Name</h1>
-        <p>Your source for quality products and services.</p>
-        <a href="#products" class="cta-button">Explore Our Products</a>
-    </section>
-
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod mauris vel orci posuere, eu volutpat urna fringilla. Aenean non lacinia dolor.</p>
-    </section>
-
-    <section id="products">
-        <h2>Our Products</h2>
-        <ul>
-            <li>Product 1</li>
-            <li>Product 2</li>
-            <li>Product 3</li>
-        </ul>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Have questions or need assistance? Feel free to contact us:</p>
-        <p>Email: info@yourcompany.com</p>
-        <p>Phone: (123) 456-7890</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2023 Your Company Name. All rights reserved.</p>
-    </footer>
+    <div class="container">
+        <label for="text">Text to speak:</label>
+        <textarea id="text"></textarea>
+        <button id="speak">Speak Text</button>
+    </div>
 </body>
 </html>
